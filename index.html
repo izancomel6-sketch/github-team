@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator Bangunan</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Paparan Pertama -->
+<div id="home">
+
+    <div class="overlay">
+
+        <h1>🏢 Navigator Bangunan</h1>
+
+        <p>Pilih destinasi anda</p>
+
+        <button onclick="showMap('Pejabat')">
+            🏢 Pejabat
+        </button>
+
+        <button onclick="showMap('Surau')">
+            🕌 Surau
+        </button>
+
+        <button onclick="showMap('Tandas')">
+            🚻 Tandas
+        </button>
+
+        <button onclick="showMap('Dewan')">
+            🏫 Dewan
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Paparan Kedua -->
+
+<div id="mapPage">
+
+    <h2 id="title"></h2>
+
+    <img src="images/floorplan.png" class="map">
+
+    <br><br>
+
+    <button onclick="goBack()">⬅ Kembali</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
